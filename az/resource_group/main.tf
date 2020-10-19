@@ -7,8 +7,8 @@ resource "azurerm_resource_group" "resource_group" {
 
 resource "azurerm_shared_image_gallery" "example" {
   name                = "example_image_gallery"
-  resource_group_name = azurerm_resource_group.example.name
-  location            = azurerm_resource_group.example.location
+  resource_group_name = "testrg"
+  location            = "West Europe"
   description         = "Shared images and things."
 
   tags = {
